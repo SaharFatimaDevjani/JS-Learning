@@ -27,7 +27,22 @@ reverseString = reverseString.join("")
 console.log(reverseString)
 
 // isPalindrome("nurses run") → true (ignore spaces and capital letters)
+
+str = "nurses run"
+str = str.trim().split(" ").join("").toLowerCase()
+revstr = ((str.split("")).reverse()).join("")
+console.log(str == revstr)
+
+
+
+
 // formatPrice(1000000) → "Rs 10,00,000.00"
+
+
 // randomBetween(1, 6) → a random whole number from 1 to 6
+function randomBetween(min,max){
+    return Math.round((Math.random()*(max-min+1))+min)
+}
+console.log(randomBetween(1,6))
 // daysBetween("2026-11-03", "2026-12-31") → 58
 // getDayName("2026-11-03") → "Tuesday"
