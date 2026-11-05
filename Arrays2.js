@@ -94,6 +94,6 @@ console.log(chunk3([1,2,3,4,5], 2))
 // sortNumbers([10,1,5,100]) → [1,5,10,100] (first try .sort() without anything and see what goes wrong)
 function sortNumbers(arr){
 
-    return arr.sort()
+    return arr.sort((a,b)=>a-b)
 }
 console.log(sortNumbers([10,1,5,100]))
